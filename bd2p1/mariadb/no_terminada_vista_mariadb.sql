@@ -1,0 +1,3 @@
+-- Crear una vista que incluya de cada año tratado, las 10
+-- asignaturas con mayor y menor tasa de éxito en el Grado
+-- en Ingeniería Informática tanto de EINA como de EUPT

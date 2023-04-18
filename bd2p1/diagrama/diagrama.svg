@@ -1,0 +1,341 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1408pt" height="997pt" viewBox="0.00 0.00 1408 997">
+<g id="graph0" class="graph" transform="translate(118.13947913921129,857.3581267934943) scale(0.7578582832551989)" data-name="">
+
+<polygon fill="white" stroke="none" points="-4,36 -4,-961 1404,-961 1404,36 -4,36"/>
+<text text-anchor="middle" x="700" y="22" font-family="Helvetica,Arial,sans-serif" font-size="20.00">Diagrama ER (Los nodos que comienzan por id son claves primarias y deberían estar subrayados)</text>
+
+<!-- asignatura -->
+<g id="node1" class="node" pointer-events="visible">
+
+<polygon fill="none" stroke="black" points="1223.94,-495.67 1150.88,-495.67 1150.88,-459.67 1223.94,-459.67 1223.94,-495.67"/>
+<text text-anchor="middle" x="1187.41" y="-473.47" font-family="Helvetica,Arial,sans-serif" font-size="14.00">asignatura</text>
+</g>
+<!-- nombre0 -->
+<g id="node6" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="1312.48" cy="-441.97" rx="40.57" ry="18"/>
+<text text-anchor="middle" x="1312.48" y="-437.77" font-family="Helvetica,Arial,sans-serif" font-size="14.00">nombre</text>
+</g>
+<!-- asignatura&#45;&#45;nombre0 -->
+<g id="edge10" class="edge">
+
+<path fill="none" stroke="black" d="M1224.26,-467.15C1241.26,-462.3 1261.33,-456.57 1278.03,-451.8"/>
+</g>
+<!-- id_asignatura -->
+<g id="node13" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="1337.2" cy="-521.83" rx="63.12" ry="18"/>
+<text text-anchor="middle" x="1337.2" y="-517.63" font-family="Helvetica,Arial,sans-serif" font-size="14.00">id_asignatura</text>
+</g>
+<!-- asignatura&#45;&#45;id_asignatura -->
+<g id="edge9" class="edge">
+
+<path fill="none" stroke="black" d="M1224.44,-488.59C1245.05,-494.67 1270.87,-502.28 1292.59,-508.68"/>
+</g>
+<!-- tasa_rendimiento -->
+<g id="node14" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="1309.59" cy="-356.56" rx="77.58" ry="18"/>
+<text text-anchor="middle" x="1309.59" y="-352.36" font-family="Helvetica,Arial,sans-serif" font-size="14.00">tasa_rendimiento</text>
+</g>
+<!-- asignatura&#45;&#45;tasa_rendimiento -->
+<g id="edge11" class="edge">
+
+<path fill="none" stroke="black" d="M1205.97,-459.28C1229.2,-436.25 1268.72,-397.08 1291.65,-374.34"/>
+</g>
+<!-- estudio -->
+<g id="node2" class="node" pointer-events="visible">
+
+<polygon fill="none" stroke="black" points="902.43,-567.54 845.55,-567.54 845.55,-531.54 902.43,-531.54 902.43,-567.54"/>
+<text text-anchor="middle" x="873.99" y="-545.34" font-family="Helvetica,Arial,sans-serif" font-size="14.00">estudio</text>
+</g>
+<!-- nombre1 -->
+<g id="node7" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="949.15" cy="-467.12" rx="40.57" ry="18"/>
+<text text-anchor="middle" x="949.15" y="-462.92" font-family="Helvetica,Arial,sans-serif" font-size="14.00">nombre</text>
+</g>
+<!-- estudio&#45;&#45;nombre1 -->
+<g id="edge20" class="edge">
+
+<path fill="none" stroke="black" d="M890.67,-531.25C903.56,-517.12 921.25,-497.71 933.79,-483.96"/>
+</g>
+<!-- id_estudio -->
+<g id="node20" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="850.77" cy="-676.01" rx="51.05" ry="18"/>
+<text text-anchor="middle" x="850.77" y="-671.81" font-family="Helvetica,Arial,sans-serif" font-size="14.00">id_estudio</text>
+</g>
+<!-- estudio&#45;&#45;id_estudio -->
+<g id="edge19" class="edge">
+
+<path fill="none" stroke="black" d="M870.61,-567.93C866.21,-591.91 858.56,-633.61 854.15,-657.6"/>
+</g>
+<!-- Es&#45;Cen -->
+<g id="node27" class="node" pointer-events="visible">
+
+<polygon fill="lightgrey" stroke="lightgrey" points="973.81,-706.21 918.19,-688.21 973.81,-670.21 1029.44,-688.21 973.81,-706.21"/>
+<text text-anchor="middle" x="973.81" y="-684.01" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Es-Cen</text>
+</g>
+<!-- estudio&#45;&#45;Es&#45;Cen -->
+<g id="edge1" class="edge">
+
+<path fill="none" stroke="black" d="M887.24,-567.96C907.29,-595.81 944.92,-648.08 963.25,-673.54"/>
+<text text-anchor="middle" x="921.75" y="-624.95" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text>
+</g>
+<!-- Es&#45;EsPorCur -->
+<g id="node28" class="node" pointer-events="visible">
+
+<polygon fill="lightgrey" stroke="lightgrey" points="761.92,-401.95 675.07,-383.95 761.92,-365.95 848.78,-383.95 761.92,-401.95"/>
+<text text-anchor="middle" x="761.92" y="-379.75" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Es-EsPorCur</text>
+</g>
+<!-- estudio&#45;&#45;Es&#45;EsPorCur -->
+<g id="edge2" class="edge">
+
+<path fill="none" stroke="black" d="M861.57,-531.19C839.46,-498.52 793.63,-430.81 772.74,-399.93"/>
+<text text-anchor="middle" x="813.65" y="-469.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text>
+</g>
+<!-- Es&#45;ConvDeMov -->
+<g id="node29" class="node" pointer-events="visible">
+
+<polygon fill="lightgrey" stroke="lightgrey" points="650.32,-566.09 545.05,-548.09 650.32,-530.09 755.58,-548.09 650.32,-566.09"/>
+<text text-anchor="middle" x="650.32" y="-543.89" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Es-ConvDeMov</text>
+</g>
+<!-- estudio&#45;&#45;Es&#45;ConvDeMov -->
+<g id="edge3" class="edge">
+
+<path fill="none" stroke="black" d="M845.21,-549.36C821.96,-549.21 787.75,-548.98 754.46,-548.77"/>
+<text text-anchor="middle" x="796.33" y="-553.26" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text>
+</g>
+<!-- Es&#45;As -->
+<g id="node30" class="node" pointer-events="visible">
+
+<polygon fill="lightgrey" stroke="lightgrey" points="1032.25,-536.02 983.27,-518.02 1032.25,-500.02 1081.23,-518.02 1032.25,-536.02"/>
+<text text-anchor="middle" x="1032.25" y="-513.82" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Es-As</text>
+</g>
+<!-- estudio&#45;&#45;Es&#45;As -->
+<g id="edge4" class="edge">
+
+<path fill="none" stroke="black" d="M902.65,-543.84C930,-538.39 971.14,-530.19 999.71,-524.5"/>
+<text text-anchor="middle" x="947.68" y="-538.37" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text>
+</g>
+<!-- estudio_por_curso -->
+<g id="node3" class="node" pointer-events="visible">
+
+<polygon fill="none" stroke="black" points="672.14,-214.82 552.28,-214.82 552.28,-178.82 672.14,-178.82 672.14,-214.82"/>
+<text text-anchor="middle" x="612.21" y="-192.62" font-family="Helvetica,Arial,sans-serif" font-size="14.00">estudio_por_curso</text>
+</g>
+<!-- curso1 -->
+<g id="node9" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="605.01" cy="-67.24" rx="31.91" ry="18"/>
+<text text-anchor="middle" x="605.01" y="-63.04" font-family="Helvetica,Arial,sans-serif" font-size="14.00">curso</text>
+</g>
+<!-- estudio_por_curso&#45;&#45;curso1 -->
+<g id="edge13" class="edge">
+
+<path fill="none" stroke="black" d="M611.19,-178.53C609.82,-153.83 607.39,-110.08 606.02,-85.44"/>
+</g>
+<!-- plazas_ofertadas1 -->
+<g id="node11" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="667.48" cy="-149.52" rx="75.26" ry="18"/>
+<text text-anchor="middle" x="667.48" y="-145.32" font-family="Helvetica,Arial,sans-serif" font-size="14.00">plazas_ofertadas</text>
+</g>
+<!-- estudio_por_curso&#45;&#45;plazas_ofertadas1 -->
+<g id="edge16" class="edge">
+
+<path fill="none" stroke="black" d="M633.73,-178.4C638.1,-174.66 642.68,-170.74 647,-167.04"/>
+</g>
+<!-- id_estudio_por_curso -->
+<g id="node15" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="789.71" cy="-73.08" rx="94.94" ry="18"/>
+<text text-anchor="middle" x="789.71" y="-68.88" font-family="Helvetica,Arial,sans-serif" font-size="14.00">id_estudio_por_curso</text>
+</g>
+<!-- estudio_por_curso&#45;&#45;id_estudio_por_curso -->
+<g id="edge12" class="edge">
+
+<path fill="none" stroke="black" d="M638.4,-178.56C672.25,-154.96 730.8,-114.15 764.27,-90.81"/>
+</g>
+<!-- tasa_de_exito -->
+<g id="node16" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="709.82" cy="-26.93" rx="64.26" ry="18"/>
+<text text-anchor="middle" x="709.82" y="-22.73" font-family="Helvetica,Arial,sans-serif" font-size="14.00">tasa_de_exito</text>
+</g>
+<!-- estudio_por_curso&#45;&#45;tasa_de_exito -->
+<g id="edge14" class="edge">
+
+<path fill="none" stroke="black" d="M622.66,-178.64C641.44,-145.94 680.72,-77.58 699.45,-44.98"/>
+</g>
+<!-- nota_de_corte -->
+<g id="node17" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="550.98" cy="-18.03" rx="65.97" ry="18"/>
+<text text-anchor="middle" x="550.98" y="-13.83" font-family="Helvetica,Arial,sans-serif" font-size="14.00">nota_de_corte</text>
+</g>
+<!-- estudio_por_curso&#45;&#45;nota_de_corte -->
+<g id="edge15" class="edge">
+
+<path fill="none" stroke="black" d="M605.89,-178.36C594.12,-144.01 569.01,-70.66 557.27,-36.39"/>
+</g>
+<!-- plazas_ocupadas -->
+<g id="node18" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="474.7" cy="-66.39" rx="75.85" ry="18"/>
+<text text-anchor="middle" x="474.7" y="-62.19" font-family="Helvetica,Arial,sans-serif" font-size="14.00">plazas_ocupadas</text>
+</g>
+<!-- estudio_por_curso&#45;&#45;plazas_ocupadas -->
+<g id="edge17" class="edge">
+
+<path fill="none" stroke="black" d="M592.8,-178.41C566.44,-153.41 519.64,-109.02 493.57,-84.29"/>
+</g>
+<!-- abandonos_voluntarios -->
+<g id="node19" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="412.28" cy="-121.54" rx="100.74" ry="18"/>
+<text text-anchor="middle" x="412.28" y="-117.34" font-family="Helvetica,Arial,sans-serif" font-size="14.00">abandonos_voluntarios</text>
+</g>
+<!-- estudio_por_curso&#45;&#45;abandonos_voluntarios -->
+<g id="edge18" class="edge">
+
+<path fill="none" stroke="black" d="M563.3,-178.4C530.59,-166.09 487.9,-150.01 456.26,-138.1"/>
+</g>
+<!-- centro -->
+<g id="node4" class="node" pointer-events="visible">
+
+<polygon fill="none" stroke="black" points="1091.73,-831.77 1037.73,-831.77 1037.73,-795.77 1091.73,-795.77 1091.73,-831.77"/>
+<text text-anchor="middle" x="1064.73" y="-809.57" font-family="Helvetica,Arial,sans-serif" font-size="14.00">centro</text>
+</g>
+<!-- nombre2 -->
+<g id="node8" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="1168.04" cy="-881.3" rx="40.57" ry="18"/>
+<text text-anchor="middle" x="1168.04" y="-877.1" font-family="Helvetica,Arial,sans-serif" font-size="14.00">nombre</text>
+</g>
+<!-- centro&#45;&#45;nombre2 -->
+<g id="edge22" class="edge">
+
+<path fill="none" stroke="black" d="M1092.14,-831.69C1108.64,-842.47 1129.41,-856.04 1145.04,-866.27"/>
+</g>
+<!-- id_centro -->
+<g id="node21" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="1102.84" cy="-939.03" rx="47.51" ry="18"/>
+<text text-anchor="middle" x="1102.84" y="-934.83" font-family="Helvetica,Arial,sans-serif" font-size="14.00">id_centro</text>
+</g>
+<!-- centro&#45;&#45;id_centro -->
+<g id="edge21" class="edge">
+
+<path fill="none" stroke="black" d="M1070.35,-832.25C1077.6,-856.07 1090.12,-897.22 1097.31,-920.88"/>
+</g>
+<!-- convenio_de_movilidad -->
+<g id="node5" class="node" pointer-events="visible">
+
+<polygon fill="none" stroke="black" points="448.11,-533.74 296.51,-533.74 296.51,-497.74 448.11,-497.74 448.11,-533.74"/>
+<text text-anchor="middle" x="372.31" y="-511.54" font-family="Helvetica,Arial,sans-serif" font-size="14.00">convenio_de_movilidad</text>
+</g>
+<!-- curso2 -->
+<g id="node10" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="443.78" cy="-467.78" rx="31.91" ry="18"/>
+<text text-anchor="middle" x="443.78" y="-463.58" font-family="Helvetica,Arial,sans-serif" font-size="14.00">curso</text>
+</g>
+<!-- convenio_de_movilidad&#45;&#45;curso2 -->
+<g id="edge24" class="edge">
+
+<path fill="none" stroke="black" d="M399.74,-497.33C407.45,-492.15 415.71,-486.61 422.97,-481.74"/>
+</g>
+<!-- plazas_ofertadas2 -->
+<g id="node12" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="209.04" cy="-646.9" rx="75.26" ry="18"/>
+<text text-anchor="middle" x="209.04" y="-642.7" font-family="Helvetica,Arial,sans-serif" font-size="14.00">plazas_ofertadas</text>
+</g>
+<!-- convenio_de_movilidad&#45;&#45;plazas_ofertadas2 -->
+<g id="edge28" class="edge">
+
+<path fill="none" stroke="black" d="M349.61,-533.98C318.24,-559.18 262.01,-604.34 231.03,-629.23"/>
+</g>
+<!-- id_convenio_de_movilidad -->
+<g id="node22" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="117" cy="-487.6" rx="116.91" ry="18"/>
+<text text-anchor="middle" x="117" y="-483.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">id_convenio_de_movilidad</text>
+</g>
+<!-- convenio_de_movilidad&#45;&#45;id_convenio_de_movilidad -->
+<g id="edge23" class="edge">
+
+<path fill="none" stroke="black" d="M296.05,-507.33C269.9,-504.45 240.29,-501.19 212.78,-498.16"/>
+</g>
+<!-- programa -->
+<g id="node23" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="196.27" cy="-536.22" rx="48.08" ry="18"/>
+<text text-anchor="middle" x="196.27" y="-532.02" font-family="Helvetica,Arial,sans-serif" font-size="14.00">programa</text>
+</g>
+<!-- convenio_de_movilidad&#45;&#45;programa -->
+<g id="edge25" class="edge">
+
+<path fill="none" stroke="black" d="M296.12,-524.6C277.91,-526.72 259.01,-528.92 242.61,-530.83"/>
+</g>
+<!-- pais -->
+<g id="node24" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="326.9" cy="-559.78" rx="27" ry="18"/>
+<text text-anchor="middle" x="326.9" y="-555.58" font-family="Helvetica,Arial,sans-serif" font-size="14.00">pais</text>
+</g>
+<!-- convenio_de_movilidad&#45;&#45;pais -->
+<g id="edge26" class="edge">
+
+<path fill="none" stroke="black" d="M353.32,-534.16C349.72,-537.65 345.99,-541.26 342.52,-544.63"/>
+</g>
+<!-- universidad -->
+<g id="node25" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="314.36" cy="-691.72" rx="56.18" ry="18"/>
+<text text-anchor="middle" x="314.36" y="-687.52" font-family="Helvetica,Arial,sans-serif" font-size="14.00">universidad</text>
+</g>
+<!-- convenio_de_movilidad&#45;&#45;universidad -->
+<g id="edge27" class="edge">
+
+<path fill="none" stroke="black" d="M366.33,-533.91C355.22,-567.63 331.55,-639.54 320.4,-673.39"/>
+</g>
+<!-- plazas_asignadas -->
+<g id="node26" class="node" pointer-events="visible">
+
+<ellipse fill="none" stroke="black" cx="319.38" cy="-468.88" rx="77.57" ry="18"/>
+<text text-anchor="middle" x="319.38" y="-464.68" font-family="Helvetica,Arial,sans-serif" font-size="14.00">plazas_asignadas</text>
+</g>
+<!-- convenio_de_movilidad&#45;&#45;plazas_asignadas -->
+<g id="edge29" class="edge">
+
+<path fill="none" stroke="black" d="M351.69,-497.49C347.63,-493.89 343.37,-490.12 339.33,-486.55"/>
+</g>
+<!-- Es&#45;Cen&#45;&#45;centro -->
+<g id="edge5" class="edge">
+
+<path fill="none" stroke="black" d="M984.6,-703.11C1001.34,-726.23 1033.54,-770.7 1051.61,-795.65"/>
+<text text-anchor="middle" x="1014.6" y="-753.58" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text>
+</g>
+<!-- Es&#45;EsPorCur&#45;&#45;estudio_por_curso -->
+<g id="edge6" class="edge">
+
+<path fill="none" stroke="black" d="M749.42,-368.32C721.94,-333.97 656.41,-252.07 626.97,-215.27"/>
+<text text-anchor="middle" x="682.75" y="-295.99" font-family="Helvetica,Arial,sans-serif" font-size="14.00">m</text>
+</g>
+<!-- Es&#45;ConvDeMov&#45;&#45;convenio_de_movilidad -->
+<g id="edge7" class="edge">
+
+<path fill="none" stroke="black" d="M586.19,-540.63C545.14,-535.85 491.67,-529.63 448.46,-524.6"/>
+<text text-anchor="middle" x="513.82" y="-536.81" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text>
+</g>
+<!-- Es&#45;As&#45;&#45;asignatura -->
+<g id="edge8" class="edge">
+
+<path fill="none" stroke="black" d="M1061.43,-510.43C1086.63,-503.88 1123.16,-494.38 1150.4,-487.3"/>
+<text text-anchor="middle" x="1102.42" y="-503.06" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text>
+</g></g>
+</svg>

@@ -1,0 +1,76 @@
+graph ER {
+  layout="fdp";
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	node [shape=box]; asignatura; estudio; estudio_por_curso; centro; convenio_de_movilidad;
+	node [shape=ellipse]; 
+    {node [label="nombre"] nombre0; nombre1; nombre2;}
+    {node [label="curso"] curso1; curso2;}
+    {node [label="plazas_ofertadas"] plazas_ofertadas1; plazas_ofertadas2;}
+    id_asignatura
+    tasa_rendimiento
+
+    id_estudio_por_curso
+    tasa_de_exito
+    nota_de_corte
+    plazas_ofertadas1
+    plazas_ocupadas
+    abandonos_voluntarios
+
+    id_estudio
+
+    id_centro
+
+    id_convenio_de_movilidad
+    programa
+    pais
+    universidad
+    plazas_ofertadas2
+    plazas_asignadas
+
+	node [shape=diamond,style=filled,color=lightgrey]; 
+    "Es-Cen"; 
+    "Es-EsPorCur";
+    "Es-ConvDeMov";
+    "Es-As";
+
+  estudio -- "Es-Cen"       [label="1",len=1.00];
+  estudio -- "Es-EsPorCur"  [label="n",len=1.00];
+  estudio -- "Es-ConvDeMov"  [label="1",len=1.00];
+  estudio -- "Es-As"        [label="1",len=1.00];
+
+  "Es-Cen"       -- centro                [label="n",len=1.00];
+  "Es-EsPorCur"  -- estudio_por_curso     [label="m",len=1.00];
+  "Es-ConvDeMov" -- convenio_de_movilidad [label="n",len=1.00];
+  "Es-As"        -- asignatura            [label="n",len=1.00];
+
+    asignatura -- id_asignatura
+    asignatura -- nombre0
+    asignatura -- tasa_rendimiento
+
+    estudio_por_curso -- id_estudio_por_curso
+    estudio_por_curso -- curso1
+    estudio_por_curso -- tasa_de_exito
+    estudio_por_curso -- nota_de_corte
+    estudio_por_curso -- plazas_ofertadas1
+    estudio_por_curso -- plazas_ocupadas
+    estudio_por_curso -- abandonos_voluntarios
+
+    estudio -- id_estudio
+    estudio -- nombre1
+
+    centro -- id_centro
+    centro -- nombre2
+
+    convenio_de_movilidad -- id_convenio_de_movilidad
+    convenio_de_movilidad -- curso2
+    convenio_de_movilidad -- programa
+    convenio_de_movilidad -- pais
+    convenio_de_movilidad -- universidad
+    convenio_de_movilidad -- plazas_ofertadas2
+    convenio_de_movilidad -- plazas_asignadas
+
+	label = "Diagrama ER (Los nodos que comienzan por id son claves primarias y deberían estar subrayados)";
+	fontsize=20;
+}

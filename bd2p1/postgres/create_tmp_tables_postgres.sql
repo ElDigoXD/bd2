@@ -1,0 +1,99 @@
+create table tmp_oferta_y_ocupacion (
+  CURSO_ACADEMICO varchar
+ ,ESTUDIO varchar
+ ,LOCALIDAD varchar
+ ,CENTRO varchar
+ ,TIPO_CENTRO varchar
+ ,TIPO_ESTUDIO varchar
+ ,PLAZAS_OFERTADAS varchar
+ ,PLAZAS_MATRICULADAS varchar
+ ,PLAZAS_SOLICITADAS varchar
+ ,INDICE_OCUPACION varchar
+ ,FECHA_ACTUALIZACION varchar
+);
+
+create table tmp_resultados (
+  CURSO_ACADEMICO varchar
+ ,CENTRO varchar
+ ,ESTUDIO varchar
+ ,TIPO_ESTUDIO varchar
+ ,ALUMNOS_MATRICULADOS varchar
+ ,ALUMNOS_NUEVO_INGRESO varchar
+ ,PLAZAS_OFERTADAS varchar
+ ,ALUMNOS_GRADUADOS varchar
+ ,ALUMNOS_ADAPTA_GRADO_MATRI varchar
+ ,ALUMNOS_ADAPTA_GRADO_MATRI_NI varchar
+ ,ALUMNOS_ADAPTA_GRADO_TITULADO varchar
+ ,ALUMNOS_CON_RECONOCIMIENTO varchar
+ ,ALUMNOS_MOVILIDAD_ENTRADA varchar
+ ,ALUMNOS_MOVILIDAD_SALIDA varchar
+ ,CREDITOS_MATRICULADOS varchar
+ ,CREDITOS_RECONOCIDOS varchar
+ ,DURACION_MEDIA_GRADUADOS varchar
+ ,TASA_EXITO varchar
+ ,TASA_RENDIMIENTO varchar
+ ,TASA_EFICIENCIA varchar
+ ,TASA_ABANDONO varchar
+ ,TASA_GRADUACION varchar
+ ,FECHA_ACTUALIZACION varchar
+);
+
+create table tmp_notas_de_corte (
+  CURSO_ACADEMICO varchar
+ ,ESTUDIO varchar
+ ,LOCALIDAD varchar
+ ,CENTRO varchar
+ ,PRELA_CONVO_NOTA_DEF varchar
+ ,NOTA_CORTE_DEFINITIVA_JULIO varchar
+ ,NOTA_CORTE_DEFINITIVA_SEPTIEMBRE varchar
+ ,FECHA_ACTUALIZACION varchar
+);
+
+create table tmp_mobilidad (
+  CURSO_ACADEMICO varchar
+ ,NOMBRE_PROGRAMA_MOVILIDAD varchar
+ ,NOMBRE_AREA_ESTUDIOS_MOV varchar
+ ,CENTRO varchar
+ ,IN_OUT varchar
+ ,NOMBRE_IDIOMA_NIVEL_MOVILIDAD varchar
+ ,PAIS_UNIVERSIDAD_ACUERDO varchar
+ ,UNIVERSIDAD_ACUERDO varchar
+ ,PLAZAS_OFERTADAS_ALUMNOS varchar
+ ,PLAZAS_ASIGNADAS_ALUMNOS_OUT varchar
+ ,FECHA_ACTUALIZACION varchar
+);
+
+create table tmp_egresados(
+  CURSO_ACADEMICO varchar
+ ,LOCALIDAD varchar
+ ,ESTUDIO varchar
+ ,TIPO_ESTUDIO varchar
+ ,TIPO_EGRESO varchar
+ ,SEXO varchar
+ ,ALUMNOS_GRADUADOS varchar
+ ,ALUMNOS_INTERRUMPEN_ESTUDIOS varchar
+ ,ALUMNOS_INTERRUMPEN_EST_ANO1 varchar
+ ,ALUMNOS_TRASLADAN_OTRA_UNIV varchar
+ ,DURACION_MEDIA_GRADUADOS varchar
+ ,TASA_EFICIENCIA varchar
+ ,FECHA_ACTUALIZACION varchar
+);
+
+create table tmp_rendimiento(
+  CURSO_ACADEMICO varchar
+ ,TIPO_ESTUDIO varchar
+ ,ESTUDIO varchar
+ ,LOCALIDAD varchar
+ ,CENTRO varchar
+ ,ASIGNATURA varchar
+ ,TIPO_ASIGNATURA varchar
+ ,CLASE_ASIGNATURA varchar
+ ,TASA_EXITO varchar
+ ,TASA_RENDIMIENTO varchar
+ ,TASA_EVALUACION varchar
+ ,ALUMNOS_EVALUADOS varchar
+ ,ALUMNOS_SUPERADOS varchar
+ ,ALUMNOS_PRESENTADOS varchar
+ ,MEDIA_CONVOCATORIAS_CONSUMIDAS varchar
+ ,FECHA_ACTUALIZACION varchar
+);
