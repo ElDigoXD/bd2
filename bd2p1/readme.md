@@ -17,6 +17,7 @@ PGPASSWORD=postgres bash postgres.sh
 ### MariaDB/MySQL
 
 Entrar en la carpeta "mariadb" y ejecutar el script.
+En el caso de que el cliente sea mysql es necesario editar el script y sustituir el comando `mariadb` por `mysql`, añadir el parámetro `--local-infile=1` a la lista  `mariadb_args` y eliminar el comentario `----------------` del archivo `transform_mariadb.sql`
 
 ```sh
 bash mariadb.sh
