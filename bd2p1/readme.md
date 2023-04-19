@@ -11,7 +11,7 @@ Los archivos necesarios se descargarán en una subcarpeta "data" si no existen t
 Entrar en la carpeta "postgres" y ejecutar el script.
 
 ```sh
-bash postgres.sh
+PGPASSWORD=postgres bash postgres.sh
 ```
 
 ### MariaDB/MySQL
