@@ -3,8 +3,8 @@ from sqlalchemy import Table, create_engine, insert, select
 from sqlalchemy.engine import ScalarResult
 from sqlalchemy.orm import Session
 
-from models import City, Country, User
-import models
+from .models import City, Country, User
+import .models
 
 global session
 global engine
