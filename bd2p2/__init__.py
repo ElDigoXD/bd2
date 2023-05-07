@@ -1,4 +1,3 @@
-
 # coding: utf-8
 from sqlalchemy import Table, create_engine, insert, select
 from sqlalchemy.engine import ScalarResult
@@ -12,10 +11,19 @@ global engine
 
 
 def main():
+  
+  username = "root"
+  password = "mariadb"
+  address = "127.0.0.1"
+  port = 3306
+  schema = "sakila"
+  
   global engine
   global session
 
-  a = """Menú principal:
+  engine = create_engine(f"mariadb+mariadbconnector://{username}:{password}@{address}:{port}/{schema}", echo=False)
+  session = Session(engine)
+  menu_string = """Menú principal:
   1. Crear país
   2. Listar países
   3. Eliminar país
@@ -25,23 +33,37 @@ def main():
   7. Crear tabla usuarios
   8. Borrar tabla usuarios
   9. Mostrar estructura tabla
+  10. Probar todos (sin listar)
   0. Salir"""
+  while True:
+    print(menu_string)
 
-  engine = create_engine("mariadb+mariadbconnector://root:mariadb@127.0.0.1/sakila", echo=False)
-  session = Session(engine)
-
-  crear_tabla_usuarios()
-  mostrar_estructura_tabla()
-  borrar_tabla_usuarios()
-
-  listar_países()
-  crear_país("112", "zz")
-  listar_ciudades()
-  crear_ciudad("601", "zz", "zz")
-  eliminar_ciudad("601")
-  eliminar_país("zz")
-
-  return
+    option_str = input("Opción: ")
+    option =int(option_str) if option_str.isdecimal() else -1 
+    if option == 1:
+      crear_país()
+    elif option == 2:
+      listar_países()
+    elif option == 3:
+      eliminar_país()
+    elif option == 4:
+      crear_ciudad()
+    elif option == 5:
+      listar_ciudades()
+    elif option == 6:
+      eliminar_ciudad()
+    elif option == 7:
+      crear_tabla_usuarios()
+    elif option == 8:
+      borrar_tabla_usuarios()
+    elif option == 9:
+      mostrar_estructura_tabla()
+    elif option == 10:
+      probar_todos()
+    elif option == 0:
+      break
+    else:
+      print("Opción no soportada.")    
 
 
 def crear_país(country_id=None, country_name=None):
@@ -112,7 +134,7 @@ def listar_ciudades():
 def eliminar_ciudad(city_id=None):
   city_id = input() if city_id is None else city_id
 
-  city: City | None = session.query(City).filter(City.city_id == city_id).first()
+  city: City = session.query(City).filter(City.city_id == city_id).first()
 
   if city is None:
     print(f"No se ha encontrado la ciudad con el id '{city_id}'.")
@@ -148,6 +170,16 @@ def mostrar_estructura_tabla():
   [print(f"  {repr(x)}") for x in table.columns]
   [print(f"  {x}") for x in table.constraints]
 
+def probar_todos():
+  crear_tabla_usuarios()
+  mostrar_estructura_tabla()
+  borrar_tabla_usuarios()
 
+  crear_país("112", "zz")
+  crear_ciudad("601", "zz", "zz")
+  eliminar_ciudad("601")
+  eliminar_país("zz")
+  
 if __name__ == "__main__":
   main()
+
