@@ -6,9 +6,10 @@ El usuario y contraseña de la bd es 'root' y 'mariadb' respectivamente.
 
 El puerto de la bd es el 3307 (se ejecuta en un contenedor docker, con el puerto 3306 exportado como 3307).
 
-Para ejecutar el programa, ejecutar el script:
+Para ejecutar el programa, ejecutar el script en el entorno virtual:
 
 ```bash
+source venv/bin/activate
 python __init__.py
 ```
 Para iniciar el contenedor si se ha parado (como root):
