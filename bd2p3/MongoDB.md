@@ -1,24 +1,3 @@
----
-title: "Mongodb"
-subtitle: "Bases de datos 2. Práctica 3"
-author: "Diego Sanz Fuertes | 825015"
-
-date: "20 de Mayo de 2023"
-toc: true  
-toc-own-page: true
-header-left: |
-  ![](/home/diego/resources/eupt.png){width=5cm}
-lang: es-ES
-titlepage: true
-
-output:
- pdf:
-  template: eisvogel
-  output: output.pdf
-  from: markdown
-  listings: true
-  citeproc: true
----
 # Parámetros de conexión
 
 ## Usuarios
